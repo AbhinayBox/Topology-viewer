@@ -1,0 +1,4 @@
+node_modules/
+dist/
+__pycache__/
+DEMO_SCRIPT.md

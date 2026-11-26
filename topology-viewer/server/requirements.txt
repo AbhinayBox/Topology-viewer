@@ -1,0 +1,5 @@
+# Only needed when you do NOT run under ParaView's pvpython (fallback VTK back-end):
+vtk>=9.3
+numpy
+wslink>=1.12
+aiohttp

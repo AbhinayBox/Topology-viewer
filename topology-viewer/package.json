@@ -1,0 +1,23 @@
+{
+  "name": "topology-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "vtk.js 3D dashboard with ParaViewWeb (wslink) remote slicing / clipping / contouring",
+  "scripts": {
+    "convert": "python3 server/convert.py data/Topology_1.vtk public/data/Topology_1.vtp",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "python3 server/pvweb_server.py --data data/Topology_1.vtk --port 1234"
+  },
+  "dependencies": {
+    "@kitware/vtk.js": "^38.1.0",
+    "events": "^3.3.0",
+    "url": "^0.11.4",
+    "wslink": "^2.5.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
+  }
+}
